@@ -3,10 +3,7 @@ package app;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class AppController {
@@ -14,11 +11,16 @@ public class AppController {
     AddressBookRepository repo;
     AddressBook book;
 
-    @GetMapping("/")
-    public String display(Model model){
+    /*@GetMapping("/")
+    public @RequestBody String display(Model model){
         model.addAttribute("name", book.toString());
-        return "buddy";
+        return "Hello, World";
+    }
+    */
 
+    @GetMapping("/")
+    public @ResponseBody String greeting(){
+        return "Hello, World";
     }
 
     @GetMapping("/makebook")
