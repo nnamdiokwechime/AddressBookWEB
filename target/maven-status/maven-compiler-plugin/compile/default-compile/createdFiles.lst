@@ -1,0 +1,14 @@
+app\BuddyInfo.class
+app\AddressBook.class
+app\Controller$OpenListener.class
+app\Controller$RemoveBuddyListener.class
+app\Controller$NewListener.class
+app\AppController.class
+app\Main.class
+app\View.class
+app\AddressBookRepository.class
+app\Controller$SaveListener.class
+app\Controller.class
+app\Controller$ChangeNameListener.class
+app\AccessingDataJpaApplication.class
+app\Controller$AddBuddyListener.class
